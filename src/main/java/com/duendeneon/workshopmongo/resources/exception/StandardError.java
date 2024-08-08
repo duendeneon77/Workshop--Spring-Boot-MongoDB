@@ -2,21 +2,19 @@ package com.duendeneon.workshopmongo.resources.exception;
 
 import java.io.Serializable;
 
-public class StandardError implements Serializable{
-	
+public class StandardError implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	private long timestamp;
+
+	private Long timestamp;
 	private Integer status;
 	private String error;
 	private String message;
 	private String path;
 	
 	public StandardError() {
-		
 	}
 
-	public StandardError(long timestamp, Integer status, String error, String message, String path) {
+	public StandardError(Long timestamp, Integer status, String error, String message, String path) {
 		super();
 		this.timestamp = timestamp;
 		this.status = status;
@@ -25,11 +23,11 @@ public class StandardError implements Serializable{
 		this.path = path;
 	}
 
-	public long getTimestamp() {
+	public Long getTimestamp() {
 		return timestamp;
 	}
 
-	public void setTimestamp(long timestamp) {
+	public void setTimestamp(Long timestamp) {
 		this.timestamp = timestamp;
 	}
 
@@ -64,7 +62,4 @@ public class StandardError implements Serializable{
 	public void setPath(String path) {
 		this.path = path;
 	}
-	
-	
-
 }
